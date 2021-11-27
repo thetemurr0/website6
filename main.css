@@ -1,0 +1,96 @@
+/* Core styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* body styles */
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./static/Inter-Medium.ttf')
+}
+
+/* main styles */
+
+main {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 68%;
+    top: 100px;
+    left: 175px;
+    background-color:hsl(244, 38%, 16%);
+    border-radius: 12px;
+}
+
+.half-item {
+    flex: 1;
+    margin: 0 40px;
+
+}
+
+.half-item__image {
+    flex: 1;
+    background-image: url('./images/image-header-desktop.jpg');
+    height:100%;
+    background-blend-mode: multiply;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: hsl(274,64%,61%);
+}
+
+.half-item h1 {
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 37px;
+    text-align: start;
+    margin-left:37px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.half-item span {
+    color: rgb(186, 30, 186);
+}
+
+.half-item .discover {
+    color: hsla(0, 0%, 100%, 0.6);
+    width: 70%;
+    line-height: 1.7;
+    font-family: 'Inter';
+    font-size: 13px;
+    margin-left: 37px;
+    font-weight: 200;
+}
+
+.statistics {
+    width: 70%;
+    margin-top: 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 37px;
+}
+
+.statistics h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+}
+
+.statistics p {
+    margin-top: 5px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter';
+    font-size: 10px;
+}
